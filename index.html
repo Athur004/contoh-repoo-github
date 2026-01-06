@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WarungKita Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#F97316',
+            secondary: '#FED7AA',
+            accent: '#EA580C',
+            dark: '#1F2937'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-gradient-to-r from-primary to-accent text-white shadow-lg fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center gap-3">
+      <img src="logo-warungkita.png" alt="Logo WarungKita" class="w-10 h-10 rounded-full bg-white p-1" />
+      <span class="font-bold text-xl">WarungKita Digital</span>
+    </div>
+    <div class="hidden md:flex gap-6 font-medium">
+      <a href="#" class="hover:text-secondary">Beranda</a>
+      <a href="#fitur" class="hover:text-secondary">Fitur</a>
+      <a href="#dashboard" class="hover:text-secondary">Dashboard</a>
+      <a href="#kontak" class="hover:text-secondary">Kontak</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-20 bg-gradient-to-br from-secondary to-white" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-dark">Digitalisasi UMKM Jadi <span class="text-primary">Lebih Mudah</span></h1>
+      <p class="mb-6 text-lg">WarungKita membantu warung, kedai kopi, dan UMKM mengelola usaha secara modern, rapi, dan efisien.</p>
+      <button class="bg-primary hover:bg-accent text-white px-6 py-3 rounded-xl shadow-lg">Mulai Sekarang</button>
+ </div>
+<video 
+  src="ilustrasi_warungkita.mp4"
+  autoplay
+  loop
+  muted
+  playsinline
+  class="w-full max-w-md rounded-xl shadow-lg">
+</video>
+</div>
+
+</section>
+
+<!-- Fitur -->
+<section id="fitur" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Fitur Unggulan</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl shadow-lg bg-secondary" data-aos="zoom-in">
+        <h3 class="font-bold text-xl mb-3">Manajemen Produk</h3>
+        <p>Kelola stok dan harga produk dengan mudah.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow-lg bg-secondary" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="font-bold text-xl mb-3">Pencatatan Penjualan</h3>
+        <p>Semua transaksi tercatat otomatis dan rapi.</p>
+      </div>
+      <div class="p-6 rounded-2xl shadow-lg bg-secondary" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="font-bold text-xl mb-3">Laporan Keuangan</h3>
+        <p>Lihat omzet dan laba secara real-time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard -->
+<section id="dashboard" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-12">Dashboard UMKM</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold">Total Penjualan</h4>
+        <p class="text-2xl font-bold text-primary">Rp 12.500.000</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold">Transaksi Hari Ini</h4>
+        <p class="text-2xl font-bold text-primary">48</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="font-semibold">Produk Terjual</h4>
+        <p class="text-2xl font-bold text-primary">320</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="kontak" class="bg-dark text-white py-8">
+  <div class="text-center">
+    <p>© 2026 WarungKita Digital. Semua Hak Dilindungi.</p>
+  </div>
+</footer>
+
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
